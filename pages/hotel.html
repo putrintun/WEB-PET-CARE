@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="../assets/img/logo.png">
+    <title>Hotel Dataset</title>
+    <link href="../assets/css/petcare.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <link id="pagestyle" href="../assets/css/argon-dashboard.css?v=2.1.0" rel="stylesheet" />
+</head>
+
+<body class="g-sidenav-show   bg-gray-100">
+    <div class="min-height-300 position-absolute w-100"
+        style="background-image: url('../assets/img/BG.png'); background-size: cover; background-position: center;">
+    </div>
+    <img src="../assets/img/PAW.png" alt="Paw Icon" class="paw-fixed-icon">
+    <aside
+        class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+        id="sidenav-main">
+        <a class="navbar-brand m-0" target="_blank" style="display: flex; align-items: center;">
+            <img src="../assets/img/logo.png" width="26px" height="26px" class="navbar-brand-img" alt="main_logo"
+                style="margin-left: 25px;">
+            <span class="ms-1"
+                style="color: #1a6771; font-family: 'Baberry'; font-size: 25px; margin-bottom: -5px;">PetCare</span>
+        </a>
+        <hr class="horizontal dark mt-0">
+        <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/dashboard.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-tv text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-5">Transaction</h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/adoption.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-hand-holding-heart text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Adoption</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/shop.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-shopping-cart text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Shopping</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/grooming.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-bath text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Grooming</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/boarding.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-house-user text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Boarding</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/consultation.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-pills text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Consultation</span>
+                    </a>
+                </li>
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-5">Dataset</h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/pet.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-paw text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Pet</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/user.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-users text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">User</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/product.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-box-open text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Product</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/groomer.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-cut text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Groomer</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../pages/hotel.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-home text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Hotel</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/veterinarian.html">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-stethoscope text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Veterinarian</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main class="main-content position-relative border-radius-lg ">
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur"
+            data-scroll="false">
+            <div class="container-fluid py-1 px-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5" style="margin-top: 10px;">
+                        <li class="breadcrumb-item text-sm"><a class="opacity- text-white"
+                                style="margin-left: -25px;">Dataset</a></li>
+                        <li class="breadcrumb-item text-sm text-white active" aria-current="page">Hotel</li>
+                    </ol>
+                    <h6 class="font-weight-bolder text-white mb-0" style="margin-left:-25px;">Hotel</h6>
+            </div>
+            </div>
+        </nav>
+        <div class="container-fluid py-4" style="margin-top: -20px;">
+            <div class="col-xl-12 col-sm-6 mb-xl-0 mb-4">
+                <div class="card" id="headerCard">
+                    <div class="card-body p-3">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <h1
+                                    style="font-family: 'Baberry'; font-size: 3rem; font-weight: normal; color: #c06e36; margin: 0;">
+                                    Hotel Dataset</h1>
+                                <p style="margin: 0; font-size: 1rem; color: #555;">
+                                    Dataset ini mencakup informasi tentang hotel hewan peliharaan yang terdiri dari
+                                    nama, kapasitas kandang hewan, serta harga per malam untuk mengelola ketersediaan
+                                    hotel pada layanan penitipan hewan.
+                                </p>
+                            </div>
+                            <div class="col-md-3 d-flex justify-content-end align-items-center">
+                                <img src="../assets/img/HOTEL DATASET.png" alt="Hotel Dataset"
+                                    style="max-width: 265px; margin-right: 15px; margin-top: -17px; margin-bottom: -20px;"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-4" style="margin-top:-25px;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-header pb-0 d-flex align-items-center justify-content-between">
+                            <h5 style="margin-top: -30px;"> </h5>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex align-items-center" style="gap: 6px; margin-top: -15px;">
+                                    <label for="search-by"
+                                        style="font-weight: 600; margin: 0; white-space: nowrap;">Search by</label>
+                                    <select id="search-by" class="form-select form-select-sm"
+                                        style="height:32px; min-width:100px; font-size:0.75rem; padding-top: 2px; padding-bottom: 2px;">
+                                        <option value="1">Nama</option>
+                                        <option value="2">Kapasitas</option>
+                                        <option value="3">Harga</option>
+                                    </select>
+                                    <input type="text" id="search-input" placeholder="Type to search..."
+                                        class="form-control form-control-sm" style="width:160px; font-size:0.75rem;" />
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button"
+                                        id="exportDropdown" data-bs-toggle="dropdown" aria-expanded="false"
+                                        style="height: 32px; min-width: 90px; margin-left: 5px;">
+                                        <span style="display: inline-block; transform: translateY(-2px);">Export</span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="exportDropdown"
+                                        style="min-width: 140px;">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                onclick="exportCSVFromData(filteredHotels.length > 0 ? filteredHotels : hotelsData, 'hotel_dataset.csv')">
+                                                Export as CSV
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body px-0 pt-0 pb-2">
+                            <div class="table-responsive p-0">
+                                <table id="data-table" class="table align-items-left mb-0"
+                                    class="table align-items-center mb-0"
+                                    style="margin-left: 20px; margin-right: 20px; max-width: 1130px;">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-uppercase text-secondary font-weight-bolder opacity-7"
+                                                style="text-align: left !important;">
+                                                Nomor
+                                                <span class="sort-arrows">
+                                                    <span class="arrow up" data-dir="asc">&#9650;</span>
+                                                    <span class="arrow down" data-dir="desc">&#9660;</span>
+                                                </span>
+                                            </th>
+                                            <th class="text-uppercase text-secondary font-weight-bolder opacity-7 ps-2"
+                                                style="text-align: left !important;">
+                                                Nama
+                                                <span class="sort-arrows">
+                                                    <span class="arrow up" data-dir="asc">&#9650;</span>
+                                                    <span class="arrow down" data-dir="desc">&#9660;</span>
+                                                </span>
+                                            </th>
+                                            <th class="text-center text-uppercase text-secondary font-weight-bolder opacity-7"
+                                                style="text-align: left !important;">
+                                                Kapasitas
+                                                <span class="sort-arrows">
+                                                    <span class="arrow up" data-dir="asc">&#9650;</span>
+                                                    <span class="arrow down" data-dir="desc">&#9660;</span>
+                                                </span>
+                                            </th>
+                                            <th class="text-center text-uppercase text-secondary font-weight-bolder opacity-7"
+                                                style="text-align: left !important;">
+                                                Harga
+                                                <span class="sort-arrows">
+                                                    <span class="arrow up" data-dir="asc">&#9650;</span>
+                                                    <span class="arrow down" data-dir="desc">&#9660;</span>
+                                                </span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="hotels-tbody"></tbody>
+                                </table>
+                                <nav aria-label="Page navigation example" style="margin-top: 10px;">
+                                    <ul class="pagination justify-content-center" id="pagination"></ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer pt-3  ">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-lg-between">
+                    <div class="copyright text-center text-sm text-muted text-lg-center" style="margin-bottom: 25px;">©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>,
+                        made with <i class="fa fa-heart"></i> by
+                        <a href="https://putrintun.notion.site/Intan-Putri-Setyowati-3b0d725404f24c4293567aee08c3a2d1?pvs=74"
+                            class="font-weight-bold" target="_blank">Intan Putri Setyowati</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script>
+        // VARIABEL
+        let hotelsData = [];
+        let filteredHotels = [];
+        let currentSort = { colIndex: null, direction: 'asc' };
+        let currentPage = 1;
+        const rowsPerPage = 10;
+
+        // PANGGIL API
+        async function fetchAndRenderHotels() {
+            try {
+                const response = await fetch('http://localhost:3000/api/hotel');
+                hotelsData = await response.json();
+                filteredHotels = hotelsData;
+                updateTable(1);
+            } catch (error) {
+                console.error('Gagal fetch data hotel:', error);
+            }
+        }
+
+        // FUNGSI RENDER TABEL
+        function renderTable(data) {
+            const tableBody = document.querySelector('tbody');
+            tableBody.innerHTML = '';
+            const start = (currentPage - 1) * rowsPerPage;
+            const end = start + rowsPerPage;
+            const paginatedData = data.slice(start, end);
+            paginatedData.forEach(hotel => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                <td>${hotel.id_hotel}</td>
+                <td>${hotel.name}</td>
+                <td>${hotel.capacity}</td>
+                <td>${hotel.price}</td>
+            `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // FUNGSI UPDATE 
+        function updateTable(page) {
+            currentPage = page;
+            renderTable(filteredHotels);
+            renderPagination({
+                containerSelector: '.pagination',
+                data: filteredHotels,
+                rowsPerPage,
+                currentPage,
+                onPageChange: updateTable
+            });
+        }
+
+        // FUNGSI PAGE
+        function renderPagination({
+            containerSelector = '.pagination',
+            data = [],
+            rowsPerPage = 10,
+            currentPage = 1,
+            onPageChange
+        }) {
+            const pagination = document.querySelector(containerSelector);
+            pagination.innerHTML = '';
+            const totalPages = Math.ceil(data.length / rowsPerPage);
+            // Previous
+            const prevLi = document.createElement('li');
+            prevLi.className = 'page-item' + (currentPage === 1 ? ' disabled' : '');
+            prevLi.innerHTML = `
+            <a class="page-link" href="javascript:;" aria-label="Previous">
+                <i class="fa fa-angle-left"></i>
+            </a>`;
+            prevLi.onclick = () => {
+                if (currentPage > 1) onPageChange(currentPage - 1);
+            };
+            pagination.appendChild(prevLi);
+            for (let i = 1; i <= totalPages; i++) {
+                const li = document.createElement('li');
+                li.className = 'page-item' + (i === currentPage ? ' active' : '');
+                li.innerHTML = `<a class="page-link" href="javascript:;">${i}</a>`;
+                li.onclick = () => {
+                    onPageChange(i);
+                };
+                pagination.appendChild(li);
+            }
+            // Next
+            const nextLi = document.createElement('li');
+            nextLi.className = 'page-item' + (currentPage === totalPages ? ' disabled' : '');
+            nextLi.innerHTML = `
+            <a class="page-link" href="javascript:;" aria-label="Next">
+                <i class="fa fa-angle-right"></i>
+            </a>`;
+            nextLi.onclick = () => {
+                if (currentPage < totalPages) onPageChange(currentPage + 1);
+            };
+            pagination.appendChild(nextLi);
+        }
+
+        // FUNGSI SORT 
+        function sortTableByColumn(colIndex, direction) {
+            if (!filteredHotels.length) return;
+            const keyMap = ['id_hotel', 'name', 'capacity', 'price'];
+            const key = keyMap[colIndex];
+            filteredHotels.sort((a, b) => {
+                let aVal = a[key];
+                let bVal = b[key];
+
+                if (key === 'age') {
+                    return direction === 'asc' ? aVal - bVal : bVal - aVal;
+                }
+                aVal = String(aVal || '').toLowerCase();
+                bVal = String(bVal || '').toLowerCase();
+                return direction === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+            });
+
+            currentSort = { colIndex, direction };
+            updateTable(1);
+            updateArrowStyles(colIndex, direction);
+        }
+        function updateArrowStyles(colIndex, activeDir) {
+            const headers = document.querySelectorAll('thead th');
+            headers.forEach((header, idx) => {
+                const arrows = header.querySelectorAll('.arrow');
+                arrows.forEach(arrow => {
+                    arrow.classList.toggle('active', idx === colIndex && arrow.getAttribute('data-dir') === activeDir);
+                });
+            });
+        }
+
+        // FUNGSI FILTER
+        function filterHotels() {
+            const searchBy = document.getElementById('search-by').value;
+            const keyword = document.getElementById('search-input').value.trim().toLowerCase();
+            const keyMap = {
+                '1': 'name',
+                '2': 'capacity',
+                '3': 'price',
+            };
+            const key = keyMap[searchBy];
+            if (!keyword) {
+                filteredHotels = hotelsData;
+            } else {
+                filteredHotels = hotelsData.filter(hotel => {
+                    if (!hotel[key]) return false;
+                    return hotel[key].toString().toLowerCase().includes(keyword);
+                });
+            }
+            updateTable(1);
+        }
+
+        // FUNGSI EXPORT
+        function exportCSVFromData(data, filename) {
+            if (!data || !data.length) return;
+            const csvHeaders = Object.keys(data[0]).join(',');
+            const csvRows = data.map(row => Object.values(row).map(v => `"${v}"`).join(','));
+            const csvContent = [csvHeaders, ...csvRows].join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.setAttribute("download", filename);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // PERINTAH
+        document.addEventListener("DOMContentLoaded", function () {
+            fetchAndRenderHotels();
+            const headers = document.querySelectorAll('thead th');
+            headers.forEach((header, idx) => {
+                header.style.cursor = 'pointer';
+                header.addEventListener('click', () => {
+                    let direction = 'asc';
+                    if (currentSort.colIndex === idx && currentSort.direction === 'asc') {
+                        direction = 'desc';
+                    }
+                    sortTableByColumn(idx, direction);
+                });
+            });
+            document.getElementById('search-input').addEventListener('input', filterHotels);
+            document.getElementById('search-by').addEventListener('change', filterHotels);
+        });
+    </script>
+    <img src="../assets/img/DOG CAT.png" alt="Pet Icon" class="pet-fixed-icon">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/argon-dashboard.min.js?v=2.1.0"></script>
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</body>
+
+</html>
